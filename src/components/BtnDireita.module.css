@@ -1,0 +1,25 @@
+.divbtndireita{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btnDireita{
+    background-color: #800000;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btnDireita:hover{
+    transform: scale(1.05);
+    background-color: #982323;
+}
