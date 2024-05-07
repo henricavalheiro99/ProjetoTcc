@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
+}
+
+.barra{
+    background-color: #800000;
+    height: 100%;
+}
+.logoBarra{
+    border-bottom: 1px solid #ffffff;
+}
+.divPerfil{
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.divuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px !important;
+    width: 100%;
+    height: 10%;
+}
+.foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-left: 10px !important;
+}
+.cargo{
+    background-color: #800000;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px !important;
+}
+.infosPerfil{
+    margin-left: 10px !important;
+}
+.divI img{
+    scale:0.8;
+    color: white;
+    padding-right: 10px !important;
+}
+.divI{
+    width: 90%;
+    margin: 15px !important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 0px !important;
+    border: none;
+    background-color: transparent;
+}
+.divI:hover{
+    background-color: #620303;
+}
