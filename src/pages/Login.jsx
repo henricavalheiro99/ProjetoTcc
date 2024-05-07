@@ -15,17 +15,21 @@ export default function Login(){
                         <h1 className={css.titledireita}>Não possui <br></br> Conta?</h1>
                         <p className={css.subtitledireita}>Aqui você planeja seus estudos</p>
                     </div>
-                    <BtnEsquerda link={"/cadastro"} title={"Cadastrar"}></BtnEsquerda>
+                    <BtnEsquerda link={"/cadastro"} title={"Criar"}></BtnEsquerda>
                 </div>
                 <div className={css.direita + ' col-8'}>
                     <div className={css.divtitle + " row"}>
                         <h2 className={css.title}>Entre na sua conta</h2>
                     </div>
-                    <div>
-                        <InputCadastro></InputCadastro>
-                        <InputCadastro></InputCadastro>
-                    </div>
-                    <BtnDireita title={"Entrar"}></BtnDireita>
+                    <form>
+                        <div>
+                            <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira seu email"}
+                                           icone={"fa-envelope"}></InputCadastro>
+                            <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira sua senha"}
+                                           icone={"fa-key"}></InputCadastro>
+                        </div>
+                        <BtnDireita title={"Entrar"}></BtnDireita>
+                    </form>
                 </div>
             </div>
         </div>

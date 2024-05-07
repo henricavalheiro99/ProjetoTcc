@@ -12,7 +12,6 @@
     border-radius: 7px;
     background-color: #f3f3f3;
     cursor: pointer;
-    margin-left: 4px;
     box-shadow: 5px 5px 10px #c1c1c1;
 }
 
@@ -47,6 +46,52 @@
     margin-right: 20px;
     font-size: 22px;
 }
+
+@media (max-width: 768px) {
+    .divInput{
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+    .icone{
+        margin-right: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 426px) {
+    .divInput{
+        margin-bottom: 18px;
+        height: 45px;
+        width: 100%;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+    .icone{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 326px) {
+    .divInput{
+        margin-bottom: 20px;
+        height: 45px;
+        width: 100%;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+    .icone{
+        margin-right: 7.5px;
+        font-size: 12px;
+    }
+}
+
+
 
 
 

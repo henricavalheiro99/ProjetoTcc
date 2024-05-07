@@ -23,3 +23,39 @@
     transform: scale(1.05);
     background-color: #982323;
 }
+
+@media (max-width: 768px) {
+    .divbtndireita{
+        padding-top: 8px;
+    }
+    .btnDireita{
+        height: 40px;
+        width: 160px;
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .divbtndireita{
+        padding-top: 5px;
+    }
+    .btnDireita{
+        height: 38px;
+        width: 140px;
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 326px) {
+    .divbtndireita{
+        padding-top: 10px;
+    }
+    .btnDireita{
+        height: 38px;
+        width: 120px;
+        font-size: 15px;
+    }
+
+}

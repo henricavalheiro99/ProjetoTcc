@@ -28,3 +28,28 @@
     color: white;
 }
 
+@media (max-width: 768px) {
+    .btndireita{
+        height: 45px;
+        width: 120px;
+        padding: 3px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 426px) {
+    .btndireita{
+        height: 40px;
+        width: 80px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 326px) {
+    .btndireita{
+        height: 40px;
+        width: 80px;
+        font-size: 15px;
+    }
+}
+

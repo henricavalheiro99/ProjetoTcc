@@ -7,6 +7,26 @@ import BtnDireita from "../components/BtnDireita";
 
 
 function Cadastro() {
+    const[nome, setNome] = useState('')
+    const[email, setEmail] = useState('')
+    const[senha, setSenha] = useState('')
+
+    function reunirDados (){
+        if (nome === "" || email === "" || senha === ""){
+            alert("Preencha todos os campos")
+            return;
+        }
+
+        const dados = {
+            nome,
+            email,
+            senha
+        }
+
+        alert(dados)
+        console.log(dados)
+    }
+
     return (
         <div className={css.main + " container-fluid"}>
             <div className={css.meio + ' row'}>
@@ -25,11 +45,16 @@ function Cadastro() {
                         <h2 className={css.title}>Crie sua conta</h2>
                     </div>
                     <div>
-                        <InputCadastro></InputCadastro>
-                        <InputCadastro></InputCadastro>
-                        <InputCadastro></InputCadastro>
+                        <div>
+                            <InputCadastro tipo={"text"} name={"nome"} placeholder={"Insira o nome"} icone={"fa-user"}
+                                           state={nome} set={setNome}></InputCadastro>
+                            <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira o email"}
+                                           icone={"fa-envelope"} state={email} set={setEmail}></InputCadastro>
+                            <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira a senha"}
+                                           icone={"fa-key"} state={senha} set={setSenha}></InputCadastro>
+                        </div>
+                        <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                     </div>
-                    <BtnDireita title={"Cadastrar"}></BtnDireita>
                 </div>
             </div>
         </div>
