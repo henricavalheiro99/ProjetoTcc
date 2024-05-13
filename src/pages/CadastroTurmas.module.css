@@ -1,6 +1,6 @@
 *{
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
     font-family: "Quicksand", sans-serif;
     transition: 0.8s;
 }
@@ -11,4 +11,6 @@
 }
 .barra{
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
