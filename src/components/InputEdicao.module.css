@@ -1,0 +1,88 @@
+.divInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 40%;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #c1c1c1;
+}
+
+.divInput:focus, .divInput:hover{
+    outline: none;
+    border-color: #af3d3d;
+    box-shadow: 0 0 0 4px #e56868;
+    transition: 0.5s !important;
+}
+
+.inputCadastro{
+    border: none;
+    width: 70%;
+    background-color: #f3f3f3;
+    outline: none;
+}
+
+.inputCadastro::placeholder{
+    color: #A8A8A8;
+}
+
+.pegaTudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.icone{
+    color: #A8A8A8;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .divInput{
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+    .icone{
+        margin-right: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 426px) {
+    .divInput{
+        margin-bottom: 18px;
+        height: 45px;
+        width: 80%;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+}
+
+@media (max-width: 326px) {
+    .divInput{
+        margin-bottom: 20px;
+        height: 45px;
+        width: 80%;
+    }
+    .inputCadastro{
+        width: 80%;
+    }
+    .icone{
+        margin-right: 7.5px;
+        font-size: 18px;
+    }
+}

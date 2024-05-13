@@ -1,0 +1,46 @@
+.divbtndireita{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btnDireita{
+    background-color: #800000;
+    border: none;
+    height: 45px;
+    width: 230px;
+    border-radius: 8px;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btnDireita:hover{
+    transform: scale(1.05);
+    background-color: #982323;
+}
+
+@media (max-width: 768px) {
+    .btnDireita{
+        height: 40px;
+        width: 160px;
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 326px) {
+    .divbtndireita{
+        margin-top: -10px;
+    }
+    .btnDireita{
+        height: 38px;
+        width: 120px;
+        font-size: 15px;
+    }
+
+}
