@@ -20,7 +20,7 @@ function Cadastro() {
         const dados = {
             nome,
             email,
-            senha
+            senha,
         }
 
         alert(dados)
@@ -47,11 +47,11 @@ function Cadastro() {
                     <div>
                         <div>
                             <InputCadastro tipo={"text"} name={"nome"} placeholder={"Insira o nome"} icone={"fa-user"}
-                                           state={nome} set={setNome}></InputCadastro>
+                                           state={nome} set={setNome} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                             <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira o email"}
-                                           icone={"fa-envelope"} state={email} set={setEmail}></InputCadastro>
+                                           icone={"fa-envelope"} state={email} set={setEmail} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                             <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira a senha"}
-                                           icone={"fa-key"} state={senha} set={setSenha}></InputCadastro>
+                                           icone={"fa-key"} state={senha} set={setSenha} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                         </div>
                         <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                     </div>

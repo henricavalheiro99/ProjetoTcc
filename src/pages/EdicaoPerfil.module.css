@@ -104,13 +104,6 @@
     .rowTwo{
         margin-top: -60px;
     }
-    .fundoTrocaImg{
-        height: 100px;
-        width: 100px;
-    }
-    .iconeUser{
-        font-size: 50px;
-    }
 }
 
 @media (max-width: 326px) {
@@ -123,12 +116,5 @@
     }
     .rowTwo{
         margin-top: -40px;
-    }
-    .fundoTrocaImg{
-        height: 90px;
-        width: 90px;
-    }
-    .iconeUser{
-        font-size: 45px;
     }
 }

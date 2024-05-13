@@ -1,0 +1,38 @@
+.fundoTrocaImg{
+    background-color: #D9D9D9;
+    border-radius: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fundoTrocaImg:hover{
+    transform: scale(1.1);
+}
+
+.iconeUser{
+    color: #B2B2B2;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 426px) {
+    .fundoTrocaImg{
+        height: 100px;
+        width: 100px;
+    }
+    .iconeUser{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 326px) {
+    .fundoTrocaImg{
+        height: 90px;
+        width: 90px;
+    }
+    .iconeUser{
+        font-size: 45px;
+    }
+}

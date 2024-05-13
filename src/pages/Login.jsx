@@ -24,9 +24,9 @@ export default function Login(){
                     <form>
                         <div>
                             <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira seu email"}
-                                           icone={"fa-envelope"}></InputCadastro>
+                                           icone={"fa-envelope"} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                             <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira sua senha"}
-                                           icone={"fa-key"}></InputCadastro>
+                                           icone={"fa-key"} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                         </div>
                         <BtnDireita title={"Entrar"}></BtnDireita>
                     </form>

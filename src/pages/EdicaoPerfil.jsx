@@ -2,6 +2,7 @@ import css from "./EdicaoPerfil.module.css"
 import {useState} from "react";
 import InputEdicao from "../components/InputEdicao";
 import BtnConfirmar from "../components/BtnConfirmar";
+import TrocaImagem from "../components/TrocaImagem";
 function EdicaoPerfil(){
     const[nome, setNome] = useState('')
     const[senha, setSenha] = useState('')
@@ -35,9 +36,7 @@ function EdicaoPerfil(){
                     </div>
 
                     <div className={css.rowTwo + " row"}>
-                        <div className={css.fundoTrocaImg}>
-                            <i className={css.iconeUser + " fa-regular fa-user"}></i>
-                        </div>
+                        <TrocaImagem altura={"100px"} largura={"100px"} fonte={"60px"}></TrocaImagem>
                     </div>
 
                     <div className={css.rowThree + " row"}>
