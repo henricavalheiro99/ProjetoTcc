@@ -1,0 +1,48 @@
+.branco{
+    background-color: white;
+}
+.botao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.botao button{
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mais{
+    width: 15px;
+}
+.divinput{
+    background-color: white;
+    border-radius: 10px;
+}
+.grid{
+    display: flex;
+}
+
+.tres {
+    margin: 20px;
+}
+
+.salvar{
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+}
+.divimg{
+    width: 342px;
+    height: 209px;
+    background: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

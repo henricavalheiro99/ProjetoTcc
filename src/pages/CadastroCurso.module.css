@@ -1,0 +1,43 @@
+.botao button{
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mais{
+    width: 15px;
+}
+.cursos{
+    background: #E7E7E7;
+    border-radius: 15px;
+    .rede{
+        width: 400px;
+    }
+    width: 400px;
+}
+.div {
+    margin: 10px;
+}
+.botao2 button, .saibamais{
+    border: none;
+}
+.botao2 {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.saibamais{
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}

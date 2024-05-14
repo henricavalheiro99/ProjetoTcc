@@ -1,0 +1,55 @@
+.barra{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.centro{
+    margin-top: 10px;
+    display: grid;
+    gap: 2vw;
+}
+
+.conteudo{
+    width: 100%;
+    height: 81vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:  11px 11px 22px #9c9c9c,
+    -11px -11px 22px #ffffff;
+    font-size: 20px;
+}
+
+.campos{
+    display: grid;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 2vh !important;
+}
+
+.campos input{
+    width: 68vw;
+    border-radius: 15px;
+    padding: 15px !important;
+    background-color: #E7E7E7;
+    border: none;
+
+}
+
+
+.salvarBotao{
+    width: 12vw;
+    border-radius: 15px;
+    margin-top: 68vh !important;
+    padding: 6px !important;
+    margin-left: 58vw !important;
+    position: fixed;
+    background-color: white;
+    box-shadow:  13px 13px 100px #9c9c9c,
+    -13px -13px 100px #ffffff;
+    border: none;
+}
+
+.salvarBotao:hover{
+    background-color: #acacac;
+}

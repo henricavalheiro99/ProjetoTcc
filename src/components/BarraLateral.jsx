@@ -27,7 +27,7 @@ export default function BarraLateral(){
             </button>
             <button className={css.divI}>
                 <img src="./Livro.svg" alt=""/>
-                <p>Cadastro de Turmas</p>
+                <p>Cadastro de Curso</p>
             </button>
             <button className={css.divI}>
                 <img src="./certificado.svg" alt=""/>
@@ -36,6 +36,15 @@ export default function BarraLateral(){
             <button className={css.divI}>
                 <img src="./calendario.svg" alt=""/>
                 <p>Calendário Anual</p>
+            </button>
+            <button className={css.divI}>
+                <img src="./userMais.svg" alt=""/>
+                <p>Cadastro de Usuarios</p>
+            </button>
+
+            <button className={css.divII}>
+                <img src="./Config.png" alt=""/>
+                <p>Configurações</p>
             </button>
         </div>
     );
