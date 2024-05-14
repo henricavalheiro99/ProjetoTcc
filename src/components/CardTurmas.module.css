@@ -1,0 +1,78 @@
+.divTudo{
+    margin-top: 20px;
+}
+
+.card{
+    height: 190px;
+    width: 100%;
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 15px;
+}
+
+.cardCima{
+    background-color: #6B6B6B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    align-items: center;
+}
+
+.esquerda,
+.direita{
+    display: flex;
+    flex-direction: row;
+}
+
+.TxtCima{
+    margin: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+.LinhaOne,
+.LinhaThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.icone{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icone:hover{
+    transform: scale(1.05);
+}
+
+.TxtBaixo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.Btn{
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.Btn:hover{
+    background-color: #3a3a3a;
+    transform: scale(1.01);
+}
+

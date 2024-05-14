@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
+}
+
+.main{
+    background-color: #ffffff;
+    height: 100vh;
+}
+.barra{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divTitle{
+    margin-top: 15px;
+}
+
+.subtitle{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}

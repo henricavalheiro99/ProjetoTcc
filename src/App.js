@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import CadSalas from "./pages/CadSalas";
 import NovaPagCadastro from "./pages/NovaPagCadastro";
 import Cadastrocursos from "./pages/Cadastrocursos";
+import Turmas from "./pages/Turmas";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
               <Route path="/login" element={<Login />}/>
               <Route path="/cadastro" element={<Cadastro />}/>
               <Route path="/edicao" element={<EdicaoPerfil/>}/>
-              <Route path="/home" element={<CadastroTurmas/>}/>
               <Route path="/usuarios" element={<CadastroUsuarios/>}/>
+              <Route path="/cadTurmas" element={<CadastroTurmas/>}/>
+              <Route path="/turmas" element={<Turmas/>}/>
               <Route path="/home" element={<Home />}/>
               <Route path="/cadSalas" element={<CadSalas />}/>
               <Route path="/cursos" element={<Cadastrocursos/>}/>

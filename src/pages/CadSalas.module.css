@@ -5,13 +5,18 @@
 }
 
 .centro{
-    margin-top: 10px;
-    display: grid;
-    gap: 2vw;
+    margin-top: 20px;
+}
+
+.alinharconteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .conteudo{
-    width: 100%;
+    width: 98%;
     height: 81vh;
     background-color: white;
     border-radius: 15px;
@@ -20,29 +25,27 @@
     font-size: 20px;
 }
 
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .campos{
     display: grid;
     gap: 1vw;
-    justify-content: center;
     margin-top: 2vh !important;
-}
-
-.campos input{
-    width: 68vw;
-    border-radius: 15px;
-    padding: 15px !important;
-    background-color: #E7E7E7;
-    border: none;
-
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 
 .salvarBotao{
     width: 12vw;
     border-radius: 15px;
-    margin-top: 68vh !important;
+    margin-top: 66vh !important;
     padding: 6px !important;
-    margin-left: 58vw !important;
+    margin-left: 56vw !important;
     position: fixed;
     background-color: white;
     box-shadow:  13px 13px 100px #9c9c9c,
@@ -51,5 +54,6 @@
 }
 
 .salvarBotao:hover{
-    background-color: #acacac;
+    transform: scale(1.05);
+    background-color: #dcd8d8;
 }
