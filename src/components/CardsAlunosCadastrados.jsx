@@ -9,8 +9,8 @@ export default function CardsAlunosCadastrados({imagem, nome}){
         </div>
 
         <div>
-            <i className={css.icone + "fa-regular fa-pen-to-square"}></i>
-            <i className={css.icone + "fa-solid fa-trash-can"}></i>
+            <i className={css.icone + " fa-regular fa-pen-to-square"}></i>
+            <i className={css.icone + " fa-solid fa-trash-can"}></i>
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import InputCadastro from "../components/InputCadastro";
 import {useState} from "react";
 import BtnConfirmar from "../components/BtnConfirmar";
 import CardsAlunosCadastrados from "../components/CardsAlunosCadastrados";
+import InputSearch from "../components/InputSearch";
 function CadastroUsuarios(){
     const[nome, setNome] = useState('')
     const[funcao, setFuncao] = useState('')
@@ -70,7 +71,7 @@ function CadastroUsuarios(){
                             </div>
 
                             <div className={css.rowEsquerdaFour + " row"}>
-                                <BtnConfirmar title={"Cadastrar"} action={reunirDados}></BtnConfirmar>
+                                <BtnConfirmar title={"Cadastrar"} action={reunirDados} ></BtnConfirmar>
                             </div>
 
                         </div>
@@ -80,8 +81,11 @@ function CadastroUsuarios(){
                                 <p className={css.titleBloco}>Usuarios cadastrados:</p>
                             </div>
 
+                            <InputSearch></InputSearch>
+
                             <div className={css.divDireitaTwo + " row"}>
                                 <CardsAlunosCadastrados imagem={'./Altininho.png'} nome={"Lucas Altino "}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
                             </div>
                         </div>
                     </div>

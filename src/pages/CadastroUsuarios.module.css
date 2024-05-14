@@ -27,7 +27,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    height: 520px;
+    height: 530px;
     box-shadow: 6px 6px 20px #949191;
     margin-left: 25px;
 }
@@ -35,7 +35,6 @@
 .usuariosCadastrados{
     background-color: white !important;
     border-radius: 10px;
-    display: flex;
     flex-direction: row;
     min-height: 520px;
     box-shadow: 6px 6px 20px #949191;
@@ -70,13 +69,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .rowDireitaOne{
-    margin-bottom: 10px;
+    height: 50px;
 }
 
 .divDireitaTwo{
     width: 100%;
+    margin-top: 10px;
 }

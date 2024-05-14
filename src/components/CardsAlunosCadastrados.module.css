@@ -9,7 +9,6 @@
     box-shadow: 6px 6px 20px #949191;
     margin: 12px;
     border-radius: 15px;
-    margin-top: -250px;
 }
 
 .alinharDiv{
@@ -26,9 +25,16 @@
 }
 
 .nome{
-    Margin-top: 11px;
+    Margin-top: 13px;
+    font-size: 15px;
 }
 
 .icone{
     color: #800000;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.icone:hover{
+    transform: scale(1.05);
 }
