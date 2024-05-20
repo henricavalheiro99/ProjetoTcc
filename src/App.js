@@ -10,6 +10,7 @@ import NovaPagCadastro from "./pages/NovaPagCadastro";
 import Cadastrocursos from "./pages/Cadastrocursos";
 import Turmas from "./pages/Turmas";
 import SalasCadastradas from "./pages/SalasCadastradas";
+import CadastrarTurmas from "./pages/CadastrarTurmas";
 
 function App() {
   return (
