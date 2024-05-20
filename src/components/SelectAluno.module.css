@@ -1,0 +1,14 @@
+.divtotal{
+    width: 85%;
+    height: 25%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, 0.4);
+}
+.nome{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 25px;
+}

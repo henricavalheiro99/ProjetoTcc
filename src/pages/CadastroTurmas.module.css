@@ -14,3 +14,43 @@
     margin: 0px;
     padding: 0px;
 }
+.divtitulo{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CadTurma{
+    font-size: 22px;
+}
+.listaAlunos{
+    background-color: white;
+    width: 95%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.4);
+}
+.addTurmas{
+    display: flex;
+    justify-content: center;
+}
+.pesquisa{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 35%;
+}
+.divAlunos{
+    margin-top: 5%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}

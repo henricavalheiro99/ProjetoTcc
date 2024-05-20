@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
+}
+
+.main{
+    background-color: #ffffff;
+    height: 100vh;
+}
+.barra{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+.divtitulo{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CadTurma{
+    font-size: 22px;
+}
+.listaAlunos{
+    background-color: white;
+    width: 95%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addTurmas{
+    display: flex;
+    justify-content: center;
+}
+
+.divtudo{
+    width: 90%;
+    height: 80%;
+}
+.divcadastro{
+    height: 100%;
+}
+.alunos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alunos button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.alunos p{
+    margin: 0;
+}
+.alunosLista{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    gap: 20px;
+}
+.alunosLista div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-right: 1px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.3);
+}
+.alunosLista div img{
+    scale: 0.7;
+}
+.textonome{
+    height: fit-content;
+}
+.divinputs input{
+    border: 10px solid #ffffff;
+    outline: none;
+    border-radius: 10px;
+    background-color: #E7E7E7;
+    transition: 0.5s !important;
+}
+.checks{
+    display: flex;
+    gap:20px;
+}
+.checks div{
+    display: flex;
+    gap: 10px;
+}
+.textarea{
+    background-color: #E7E7E7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}

@@ -9,6 +9,7 @@ import CadSalas from "./pages/CadSalas";
 import NovaPagCadastro from "./pages/NovaPagCadastro";
 import Cadastrocursos from "./pages/Cadastrocursos";
 import Turmas from "./pages/Turmas";
+import CadastrarTurmas from "./pages/CadastrarTurmas";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="/edicao" element={<EdicaoPerfil/>}/>
               <Route path="/usuarios" element={<CadastroUsuarios/>}/>
               <Route path="/cadTurmas" element={<CadastroTurmas/>}/>
+              <Route path="/cadastrarTurmas" element={<CadastrarTurmas/>}/>
               <Route path="/turmas" element={<Turmas/>}/>
               <Route path="/home" element={<Home />}/>
               <Route path="/cadSalas" element={<CadSalas />}/>

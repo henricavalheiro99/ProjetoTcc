@@ -1,11 +1,5 @@
 import css from "./BarraLateral.module.css"
-import * as PropTypes from "prop-types";
 
-function FontAwesomeIcon(props) {
-    return null;
-}
-
-FontAwesomeIcon.propTypes = {icon: PropTypes.any};
 export default function BarraLateral(){
     return (
         <div className={css.barra + ' w-100'}>
