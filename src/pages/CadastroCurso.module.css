@@ -1,43 +1,37 @@
-.botao button{
-    border-radius: 15px;
-    border: none;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
 }
 
-.botao{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.main{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
 }
 
-.mais{
-    width: 15px;
+.barra{
+    height: 100vh;
+    margin: 0px !important;
+    padding: 0px !important;
 }
-.cursos{
-    background: #E7E7E7;
-    border-radius: 15px;
-    .rede{
-        width: 400px;
-    }
-    width: 400px;
+
+.divTitle{
+    margin-top: 15px;
 }
-.div {
-    margin: 10px;
+
+.subtitle{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
-.botao2 button, .saibamais{
-    border: none;
-}
-.botao2 {
+
+.divCards{
+    height: 80vh;
+    overflow-y: hidden;
     display: flex;
-    justify-content: end;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.saibamais{
-    display: block;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-}
+
