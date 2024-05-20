@@ -20,7 +20,7 @@ export default function CadSalas(){
                                     <InputSalas texto={"Tipo de sala"}></InputSalas>
                                     <InputSalas texto={"N°"}></InputSalas>
                                     <InputSalas texto={"Descrição"}></InputSalas>
-                                    <BtnSalvar title={"Salvar"}></BtnSalvar>
+                                    <BtnSalvar title={"Salvar"} margem={"100px"}></BtnSalvar>
                                 </div>
                             </div>
                         </div>

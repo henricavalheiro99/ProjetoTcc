@@ -1,109 +1,48 @@
 import { useRef, useState,StyleSheet } from "react";
 import css from './NovaPagCadastro.module.css'
 import BarraLateral from "../components/BarraLateral";
-import {Link} from "react-router-dom";
+import BotaoCriar from "../components/BotaoCriar";
+import BtnSalvar from "../components/BtnSalvar";
+import InputSalas from "../components/InputSalas";
+
 function NovaPagCadastro(){
     return (
-        <div style={css.tudinho}>
-            <div className={css.main + ' container-fluid'}>
-                <div className={css.tudo + " row"}>
-                    <div className={css.barra + ' col-3'}>
-                        <BarraLateral></BarraLateral>
+        <div className={css.main + ' container-fluid'}>
+            <div className={css.tudo + " row"}>
+                <div className={css.barra + ' col-3'}>
+                    <BarraLateral></BarraLateral>
+                </div>
+                <div className={css.meio + ' col-9'}>
+                    <div className={css.divTitle}>
+                        <BotaoCriar nome={"Cadastro de Cursos:"}></BotaoCriar>
                     </div>
-                    <div className={css.addTurmas + ' col-9'}>
-                        {/*header*/}
-                        <div className={css.branco}>
-                            <div className={css.botao}>
-                                <h1>Cadastro de Cursos:</h1>
-                                <button>
-                                    <img className={css.mais} src="/maizinho.png"/>
-                                    Criar novo
-                                </button>
-                            </div>
-                            <div className={css.comecinho}>
-                                <div>
-                                    <h5 style={{marginBottom: "20px"}}>Cursos em andamento:</h5>
+
+                    <div className={css.divSubtitle}>
+                        <p className={css.subtitle}>Cursos em andamento</p>
+                    </div>
+
+                    <div className={css.DivBaixoOne}>
+                        <div className={css.CardGigante + " row"}>
+                            <div className={css.Cima}>
+                                <div className={css.divEsquerdaCima}>
+                                    <InputSalas texto={"Nome do curso"}></InputSalas>
+                                    <InputSalas texto={"Carga horaria"}></InputSalas>
+                                    <InputSalas texto={"Tipo"}></InputSalas>
+                                </div>
+
+                                <div className={css.divDireitaCima}>
+                                    <i className={css.icone + " fa-regular fa-image"}></i>
                                 </div>
                             </div>
 
-                            {/*input*/}
-                            <div>
-                                <form className={css.divinput}>
-                                    <div className={css.grid}>
-                                        <div className={css.tres}>
-                                            <div>
-                                                <input
-                                                    style={{
-                                                        backgroundColor: "#E7E7E7",
-                                                        borderRadius: "10px",
-                                                        padding: "10px",
-                                                        border: "none",
-                                                        display: "grid",
-                                                        marginBottom: '30px',
-                                                        width: "530px"
-                                                    }}
-                                                    placeholder={"Nome do curso:"}
-                                                />
-                                            </div>
-                                            <div>
-                                                <input
-                                                    style={{
-                                                        backgroundColor: "#E7E7E7",
-                                                        borderRadius: "10px",
-                                                        padding: "10px",
-                                                        border: "none",
-                                                        marginBottom: '30px',
-                                                        width: "530px"
-                                                    }}
-                                                    placeholder={"Carga horaria:"}
-                                                />
-                                            </div>
-
-                                            <div>
-                                                <input
-                                                    style={{
-                                                        backgroundColor: "#E7E7E7",
-                                                        borderRadius: "10px",
-                                                        padding: "10px",
-                                                        border: "none",
-                                                        marginBottom: '30px',
-                                                        width: "530px"
-                                                    }}
-                                                    placeholder={"Tipo:"}
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className={css.divimg}>
-                                            <img className={css.img} style={{
-                                                backgroundColor: "#E7E7E7",
-                                                borderRadius: "10px",
-                                                width: "104px"
-                                            }} src="/camera.png"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input
-                                            style={{
-                                                backgroundColor: "#E7E7E7",
-                                                borderRadius: "10px",
-                                                padding: "21px 60px 160px 22px",
-                                                border: "none",
-                                                gap: "20px",
-                                                margin: "20px",
-                                                width: "900px",
-                                                margintop: "13px"
-                                            }}
-                                            placeholder={"Descrição:"}
-                                        />
-                                    </div>
-                                </form>
+                            <div className={css.pegaTudo}>
+                                <div className={css.divInput}>
+                                    <input className={css.inputCadastro}
+                                           placeholder={"Descrição"}/>
+                                </div>
                             </div>
-                            <Link  style={{textDecoration: "none"}} to={"/cadastrocursos"}>
-                                <button className={css.salvar}>
-                                    Salvar
-                                </button>
-                            </Link>
+
+                            <BtnSalvar title={"Salvar"} margem={"-15px"}></BtnSalvar>
                         </div>
                     </div>
                 </div>
