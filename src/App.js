@@ -11,6 +11,7 @@ import Cadastrocursos from "./pages/Cadastrocursos";
 import Turmas from "./pages/Turmas";
 import SalasCadastradas from "./pages/SalasCadastradas";
 import CadastrarTurmas from "./pages/CadastrarTurmas";
+import Calendario from "./pages/Calendario";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/salasCadastradas" element={<SalasCadastradas/>}/>
               <Route path="/cursos" element={<Cadastrocursos/>}/>
               <Route path="/cadCursos" element={<NovaPagCadastro/>}/>
+              <Route path="/calendario" element={<Calendario/>}/>
           </Routes>
       </BrowserRouter>
   );
