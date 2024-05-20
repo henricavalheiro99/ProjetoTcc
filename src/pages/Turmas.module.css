@@ -24,3 +24,8 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+
+.divCards{
+    height: 78vh;
+    overflow-x: hidden;
+}

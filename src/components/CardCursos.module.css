@@ -1,0 +1,65 @@
+.Cards{
+    height: 70vh;
+    width: 450px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 20px #949191;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px;
+}
+
+.imagem{
+    width: 100%;
+    height: 200px;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.subtitle{
+    font-size: 14px;
+    margin-left: 15px;
+    overflow-x: hidden;
+    height: 100px;
+}
+
+.divbaixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.botao{
+    background-color: #800000;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.botao:hover{
+    transform: scale(1.02);
+}
+
+.icone{
+    margin-right: 10px;
+    font-size: 23px;
+    color: #800000;
+    cursor: pointer;
+}
+
+.icone:hover{
+    transform: scale(1.1);
+}

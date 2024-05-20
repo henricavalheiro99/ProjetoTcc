@@ -11,8 +11,6 @@ export default function Home(){
                 <div className={css.meio + ' col-9' }>
 
                 </div>
-
-
             </div>
         </div>
     )
