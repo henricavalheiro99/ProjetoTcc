@@ -21,7 +21,8 @@
     align-items: center;
 }
 .CadTurma{
-    font-size: 22px;
+    font-size: 28px;
+    font-weight: bold;
 }
 .listaAlunos{
     background-color: white;
