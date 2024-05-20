@@ -2,6 +2,7 @@ import css from "./CadSalas.module.css"
 import BarraLateral from "../components/BarraLateral";
 import BotaoCriar from "../components/BotaoCriar";
 import InputSalas from "../components/InputSalas";
+import BtnSalvar from "../components/BtnSalvar";
 export default function CadSalas(){
     return (
         <div className={css.main + ' container-fluid'}>
@@ -19,7 +20,7 @@ export default function CadSalas(){
                                     <InputSalas texto={"Tipo de sala"}></InputSalas>
                                     <InputSalas texto={"N°"}></InputSalas>
                                     <InputSalas texto={"Descrição"}></InputSalas>
-                                    <button className={css.salvarBotao}>Salvar</button>
+                                    <BtnSalvar title={"Salvar"}></BtnSalvar>
                                 </div>
                             </div>
                         </div>

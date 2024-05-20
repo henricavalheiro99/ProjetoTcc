@@ -86,6 +86,11 @@ function CadastroUsuarios(){
                             <div className={css.divDireitaTwo + " row"}>
                                 <CardsAlunosCadastrados imagem={'./Altininho.png'} nome={"Lucas Altino "}></CardsAlunosCadastrados>
                                 <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
+                                <CardsAlunosCadastrados imagem={'./Brunasso.png'} nome={"Brunão melhor mãe"}></CardsAlunosCadastrados>
                             </div>
                         </div>
                     </div>

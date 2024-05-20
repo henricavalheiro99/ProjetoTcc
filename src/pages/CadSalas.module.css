@@ -38,22 +38,3 @@
     padding-left: 20px;
     padding-top: 10px;
 }
-
-
-.salvarBotao{
-    width: 12vw;
-    border-radius: 15px;
-    margin-top: 66vh !important;
-    padding: 6px !important;
-    margin-left: 56vw !important;
-    position: fixed;
-    background-color: white;
-    box-shadow:  13px 13px 100px #9c9c9c,
-    -13px -13px 100px #ffffff;
-    border: none;
-}
-
-.salvarBotao:hover{
-    transform: scale(1.05);
-    background-color: #dcd8d8;
-}
