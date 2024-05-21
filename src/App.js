@@ -30,6 +30,7 @@ function App() {
               <Route path="/cursos" element={<Cadastrocursos/>}/>
               <Route path="/cadCursos" element={<NovaPagCadastro/>}/>
               <Route path="/calendario" element={<Calendario/>}/>
+              <Route path="/*" element={<PagErro/>}/>
           </Routes>
       </BrowserRouter>
   );
