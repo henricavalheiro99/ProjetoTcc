@@ -12,6 +12,8 @@ import Turmas from "./pages/Turmas";
 import SalasCadastradas from "./pages/SalasCadastradas";
 import CadastrarTurmas from "./pages/CadastrarTurmas";
 import Calendario from "./pages/Calendario";
+import {useState} from "react";
+import PagErro from "./pages/PagErro";
 
 function App() {
   return (
