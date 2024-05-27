@@ -27,12 +27,12 @@
 .listaAlunos{
     background-color: white;
     width: 95%;
-    height: 90%;
     border-radius: 15px;
     box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px
 }
 .addTurmas{
     display: flex;
@@ -67,6 +67,10 @@
     justify-content: center;
     padding: 3px;
     gap: 20px;
+    overflow: auto;
+    height: 360px;
+    align-content: flex-start;
+
 }
 .alunosLista div{
     background-color: white;
@@ -85,9 +89,10 @@
 .divinputs input{
     border: 10px solid #ffffff;
     outline: none;
-    border-radius: 10px;
     background-color: #E7E7E7;
     transition: 0.5s !important;
+    border-radius: 20px;
+    padding: 8px;
 }
 .checks{
     display: flex;
@@ -102,4 +107,28 @@
     border: none;
     outline: none;
     border-radius: 10px;
+    margin-top: 5px;
+    height: 40%;
+    width: 95%;
+    resize: none;
+    padding: 10px;
+}
+
+.botaoSalvar{
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    width: 10vw;
+    background: #ffffff;
+    box-shadow:  22px 22px 100px #898989,
+    -22px -22px 100px #ffffff;
+    margin-bottom: 15px;
+    border: solid 0.5px #620303;
+    color: #620303;
+}
+
+.botaoSalvar:hover{
+    background: #620303;
+    color: white;
+    border: solid 0.5px #ffffff;
 }
