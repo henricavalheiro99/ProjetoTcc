@@ -21,7 +21,6 @@ function Cadastrocursos(){
             .then((dados)=>dados.json())
             .then(function (data) {
                 setCursos([...data.cursos])
-                console.log(cursos)
             })
             .catch((erro) =>alert(erro))
     }
@@ -49,6 +48,7 @@ function Cadastrocursos(){
                                 <p key={index}>{obj.descricao}</p>
                                 <p key={index}>{obj.cargaHoraria}</p>
                                 <p key={index}>{obj.diasSemanaCurso}</p>
+                                <p key={index}>{obj.dataInicial}</p>
                                 <p key={index}>{obj.dataFinal}</p>
                             </div>
                         ))}
