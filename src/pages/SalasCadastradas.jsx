@@ -12,7 +12,7 @@ export default function SalasCadastradas(){
                 </div>
                 <div className={css.turmas + ' col-9'}>
                     <div className={css.divTitle}>
-                        <BotaoCriar nome={"Cadastro de Salas:"}></BotaoCriar>
+                        <BotaoCriar nome={"Cadastro de Salas:"} redirect={"/cadSalas"}></BotaoCriar>
                     </div>
 
                     <div className={css.divCards + " row"}>

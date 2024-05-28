@@ -64,4 +64,4 @@ export default function CadastrarTurmas() {
                 </div>
             </div>
         </div>
-    );
+    );}

@@ -11,7 +11,7 @@ export default function Turmas(){
               </div>
               <div className={css.turmas + ' col-9'}>
                   <div className={css.divTitle}>
-                    <BotaoCriar nome={"Cadastrar Turma:"}></BotaoCriar>
+                    <BotaoCriar nome={"Cadastrar Turma:"} redirect={"/cadastrarTurmas"}></BotaoCriar>
                   </div>
 
                   <div className={css.divSubtitle}>

@@ -20,10 +20,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .CadTurma{
     font-size: 28px;
     font-weight: bold;
 }
+
 .listaAlunos{
     background-color: white;
     width: 95%;
@@ -34,6 +36,7 @@
     justify-content: center;
     margin-bottom: 20px
 }
+
 .addTurmas{
     display: flex;
     justify-content: center;
@@ -43,14 +46,17 @@
     width: 90%;
     height: 80%;
 }
+
 .divcadastro{
     height: 100%;
 }
+
 .alunos{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .alunos button{
     background-color: transparent;
     border: none;
@@ -60,6 +66,7 @@
 .alunos p{
     margin: 0;
 }
+
 .alunosLista{
     margin-top: 20px;
     display: flex;
@@ -72,6 +79,7 @@
     align-content: flex-start;
 
 }
+
 .alunosLista div{
     background-color: white;
     display: flex;
@@ -80,24 +88,28 @@
     border-radius: 10px;
     box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.3);
 }
+
 .alunosLista div img{
     scale: 0.7;
 }
+
 .textonome{
     height: fit-content;
 }
+
 .divinputs input{
     border: 10px solid #ffffff;
     outline: none;
     background-color: #E7E7E7;
     transition: 0.5s !important;
     border-radius: 20px;
-    padding: 8px;
+    padding: 6px;
 }
 .checks{
     display: flex;
     gap:20px;
 }
+
 .checks div{
     display: flex;
     gap: 10px;

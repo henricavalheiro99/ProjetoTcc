@@ -12,7 +12,7 @@ export default function CadSalas(){
                 </div>
                 <div className={css.meio + ' col-9'}>
                     <div className={css.centro}>
-                        <BotaoCriar nome='Cadastro de salas:'></BotaoCriar>
+                        <p className={css.titulasso}>Cadastro de salas:</p>
                         <div className={css.alinharconteudo}>
                             <div className={css.conteudo}>
                                 <div className={css.campos}>
