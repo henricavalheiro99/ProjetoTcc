@@ -1,0 +1,28 @@
+/* SeletorDeDias.module.css */
+.button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border:none;
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow:  50px 50px 100px #5a5a5a,
+    -50px -50px 100px #ffffff;
+    margin: ;
+}
+
+.buttonSelected {
+    color: white;
+    background-color: #620303;
+}
+
+.buttonUnselected {
+    color: #620303;
+    background-color: white;
+    border: solid 0.5px #620303;
+}
+
+.divI{
+    display: flex;
+    gap: 23px;
+}
