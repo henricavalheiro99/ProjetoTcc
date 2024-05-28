@@ -74,7 +74,8 @@
 
 .divI{
     width: 90%;
-    margin: 15px !important;
+    margin-left: 20px !important;
+    margin-top: 5px;
     border-radius: 10px;
     display: flex;
     justify-content: left;

@@ -40,8 +40,8 @@ export default function BarraLateral(){
                 <div className={css.divPerfil}>
                     <img className={css.foto} src="LESS.webp" alt=""/>
                     <div className={css.infosPerfil}>
-                        <p>Loud Less</p>
-                        <p className={css.cargo}>A máquina</p>
+                        <p className={' mb-0'}>Loud Less</p>
+                        <p className={css.cargo + ' mb-0'}>A máquina</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,6 @@ export default function BarraLateral(){
                 <img src="./userMais.svg" alt=""/>
                 <p>Cadastro de Usuarios</p>
             </button>
-
             <button onClick={irPara6} className={css.divII}>
                 <img src="./Config.png" alt=""/>
                 <p>Configurações</p>
