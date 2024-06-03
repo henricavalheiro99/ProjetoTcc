@@ -10,17 +10,19 @@ function Cadastro() {
     const[nome, setNome] = useState('')
     const[email, setEmail] = useState('')
     const[senha, setSenha] = useState('')
+    const[funcao, setFuncao] = useState('')
 
     function reunirDados (){
-        if (nome === "" || email === "" || senha === ""){
+        if (nome === "" || email === "" || senha === "" || funcao === ""){
             alert("Preencha todos os campos")
             return;
         }
 
         const dados = {
             nome,
-            email,
             senha,
+            funcao,
+            email
         }
 
         alert(dados)
@@ -48,10 +50,12 @@ function Cadastro() {
                         <div>
                             <InputCadastro tipo={"text"} name={"nome"} placeholder={"Insira o nome"} icone={"fa-user"}
                                            state={nome} set={setNome} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
-                            <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira o email"}
+                             <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira o email"}
                                            icone={"fa-envelope"} state={email} set={setEmail} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                             <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira a senha"}
                                            icone={"fa-key"} state={senha} set={setSenha} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
+                            <InputCadastro tipo={"text"} name={"funcao"} placeholder={"Insira a função"}
+                                           icone={"fa-key"} state={funcao} set={setFuncao} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                         </div>
                         <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                     </div>

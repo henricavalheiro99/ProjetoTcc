@@ -2,7 +2,28 @@ import css from "./Turmas.module.css"
 import BarraLateral from "../components/BarraLateral";
 import BotaoCriar from "../components/BotaoCriar";
 import CardTurmas from "../components/CardTurmas";
+import CardCursos from "../components/CardCursos";
+import {useEffect, useState} from "react";
 export default function Turmas(){
+    const [turmas,setTurmas] = useState([])
+    const [url,setUrl] = useState("http://127.0.0.1:5000/turmas")
+    useEffect(() => {
+        mostraTurmas()
+    }, []);
+    async function mostraTurmas(){
+        let config = {
+            methods: 'GET',
+            headers: {
+                "Content-Type":"application/json"
+            }
+        }
+        fetch(url, config)
+            .then((dados)=>dados.json())
+            .then(function (data) {
+                setTurmas([...data.turmas])
+            })
+            .catch((erro) =>alert(erro))
+    }
     return(
       <div className={css.main + " container-fluid"}>
           <div className={css.tudo + " row"}>
@@ -11,7 +32,7 @@ export default function Turmas(){
               </div>
               <div className={css.turmas + ' col-9'}>
                   <div className={css.divTitle}>
-                    <BotaoCriar nome={"Cadastrar Turma:"} redirect={"/cadastrarTurmas"}></BotaoCriar>
+                    <BotaoCriar nome={"Cadastrar Turma:"} redirect={"/cadastrarTurmaims"}></BotaoCriar>
                   </div>
 
                   <div className={css.divSubtitle}>
@@ -19,17 +40,10 @@ export default function Turmas(){
                   </div>
 
                   <div className={css.divCards + " row"}>
-                      <CardTurmas numero={"1"} curso={"Redes"} sala={"22"}
-                      dia={"22/06/24"} hora={"17:00"} professor={"Fernando"}></CardTurmas>
-
-                      <CardTurmas numero={"2"} curso={"IA"} sala={"20"}
-                      dia={"13/06/24"} hora={"19:00"} professor={"Saruel"}></CardTurmas>
-
-                      <CardTurmas numero={"2"} curso={"IA"} sala={"20"}
-                                  dia={"13/06/24"} hora={"19:00"} professor={"Saruel"}></CardTurmas>
-
-                      <CardTurmas numero={"2"} curso={"IA"} sala={"20"}
-                                  dia={"13/06/24"} hora={"19:00"} professor={"Saruel"}></CardTurmas>
+                      {turmas.map((obj,index) => (
+                          <CardTurmas key={index} numero={obj.turma_id} curso={obj.nomeDaTurma} sala={obj.sala_id}
+                                      dia={obj.inicioAulas} hora={obj.finalAulas} professor={obj.nomeUsuario}></CardTurmas>
+                      ))}
                   </div>
               </div>
           </div>
