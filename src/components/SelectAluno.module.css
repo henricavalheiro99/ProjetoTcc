@@ -1,6 +1,6 @@
 .divtotal{
     width: 85%;
-    height: 25%;
+    height: 15%;
     align-items: center;
     border-radius: 10px;
     padding: 10px;
@@ -11,4 +11,9 @@
     align-items: center;
     height: 100%;
     gap: 25px;
+}
+.imguser{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
 }

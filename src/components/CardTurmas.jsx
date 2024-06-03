@@ -15,7 +15,7 @@ export default function CardTurmas({numero, curso, sala, dia, hora, professor}){
                     <div className={css.direita}>
                         <p className={css.TxtCima}>{dia}</p>
                         <p className={css.TxtCima}>-</p>
-                        <p className={css.TxtCima}>{hora}H</p>
+                        <p className={css.TxtCima}>{hora}</p>
                     </div>
                 </div>
 

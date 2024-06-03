@@ -3,8 +3,30 @@ import BarraLateral from "../components/BarraLateral";
 import BotaoCriar from "../components/BotaoCriar";
 import SelecAluno from "../components/SelecAluno";
 import InputSearch from "../components/InputSearch";
+import CardTurmas from "../components/CardTurmas";
+import {useEffect, useState} from "react";
 
 export default function CadastroTurmas(){
+    const [alunos,setAlunos] = useState([])
+    const [url,setUrl] = useState("http://127.0.0.1:5000/usuarios")
+    useEffect(() => {
+        mostraAlunos()
+    }, []);
+    async function mostraAlunos(){
+        let config = {
+            methods: 'GET',
+            headers: {
+                "Content-Type":"application/json"
+            }
+        }
+        fetch(url, config)
+            .then((dados)=>dados.json())
+            .then(function (data) {
+                console.log(data.usuarios)
+                setAlunos([...data.usuarios])
+            })
+            .catch((erro) =>alert(erro))
+    }
     return (
         <div className={css.main + ' container-fluid'}>
             <div className={css.tudo + " row"}>
@@ -23,10 +45,12 @@ export default function CadastroTurmas(){
                             </div>
                         </div>
                         <div className={css.divAlunos + ' col-12'}>
-                            <SelecAluno></SelecAluno>
-                            <SelecAluno></SelecAluno>
-                            <SelecAluno></SelecAluno>
-                            <SelecAluno></SelecAluno>
+                            {alunos.map((obj, index) => (
+                                obj.funcao === 2 ? (
+                                    <SelecAluno key={index} imagem={obj.img} nomeAluno={obj.nome} />
+                                ) : console.log(obj.img)
+                            ))}
+
                         </div>
 
                     </div>
