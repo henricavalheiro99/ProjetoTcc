@@ -140,4 +140,11 @@
     padding: 0px;
     margin: 0px;
 }
+.alunosCard{
+    display: flex;
+    font-size: 15px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #c4c4c4,
+    -8px -8px 16px #ffffff;
+}
 
