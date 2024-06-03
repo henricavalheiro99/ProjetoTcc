@@ -96,15 +96,32 @@ export default function CadastrarTurmas() {
                                     <button>+</button>
                                 </div>
                                 <div className={css.alunosLista}>
-                                    <div>
+       <div className={css.alunosCard}>
                                         <img src="./Altininho.png" alt=""/>
                                         <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
                                     </div>
-                                    <div>
+
+                                    <div className={css.alunosCard}>
                                         <img src="./Altininho.png" alt=""/>
                                         <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
                                     </div>
-                                    <div>
+
+                                    <div className={css.alunosCard}>
+                                        <img src="./Altininho.png" alt=""/>
+                                        <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
+                                    </div>
+
+                                    <div className={css.alunosCard}>
+                                        <img src="./Altininho.png" alt=""/>
+                                        <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
+                                    </div>
+
+                                    <div className={css.alunosCard}>
+                                        <img src="./Altininho.png" alt=""/>
+                                        <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
+                                    </div>
+
+                                    <div className={css.alunosCard}>
                                         <img src="./Altininho.png" alt=""/>
                                         <p className={css.textonome + ' m-0'}>Lucas Altino do Arrocha</p>
                                     </div>
