@@ -3,7 +3,39 @@ import BarraLateral from "../components/BarraLateral";
 import BotaoCriar from "../components/BotaoCriar";
 import InputSalas from "../components/InputSalas";
 import BtnSalvar from "../components/BtnSalvar";
+import {useState} from "react";
+import BtnDireita from "../components/BtnDireita";
 export default function CadSalas(){
+    const [id,setId] = useState([])
+    const [tipo,setTipo] = useState([])
+    const [numero,setNumero] = useState([])
+    const [descricao,setDescricao] = useState([])
+
+    const [sala,setSala] = useState([])
+    function reunirDados (){
+        const url = "http://127.0.0.1:5000/salas"
+        const dados = {
+            id,
+            tipo,
+            numero,
+            descricao
+        }
+
+        let config = {
+            method: 'POST',
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(dados)
+        }
+
+        fetch(url, config)
+            .then((dados)=>dados.json())
+            .then(function (data) {
+                setSala(data.Salas)
+            })
+            .catch((erro) =>alert(erro))
+    }
     return (
         <div className={css.main + ' container-fluid'}>
             <div className={css.tudo + " row"}>
@@ -17,10 +49,11 @@ export default function CadSalas(){
                             <div className={css.conteudo}>
                                 <div className={css.campos}>
                                     <h2 className={css.title}>Nova sala:</h2>
-                                    <InputSalas texto={"Tipo de sala"}></InputSalas>
-                                    <InputSalas texto={"N°"}></InputSalas>
-                                    <InputSalas texto={"Descrição"}></InputSalas>
-                                    <BtnSalvar title={"Salvar"} margem={"100px"}></BtnSalvar>
+                                    <InputSalas set={setId} placeholder={'Insira o Id da sala'} state={id} texto={"Id da sala"}></InputSalas>
+                                    <InputSalas set={setTipo}placeholder={'Insira o tipo da sala'}   state={tipo} texto={"Tipo de sala"}></InputSalas>
+                                    <InputSalas set={setNumero} placeholder={'Insira o numero da sala'}  state={numero} texto={"N°"}></InputSalas>
+                                    <InputSalas set={setDescricao} placeholder={'Insira o descrição da sala'}   state={descricao} texto={"Descrição"}></InputSalas>
+                                    <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                                 </div>
                             </div>
                         </div>

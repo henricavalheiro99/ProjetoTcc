@@ -1,6 +1,6 @@
 import css from "./CardSalas.module.css";
 
-export default function CardSalas({numero, descricao}){
+export default function CardSalas({nome,numero, descricao}){
     return(
         <div className={css.divTudo}>
             <div className={css.card}>
@@ -10,7 +10,8 @@ export default function CardSalas({numero, descricao}){
 
                 <div className={css.cardBaixo}>
                     <div className={css.LinhaOne}>
-                        <p className={css.text}>Sala de aula   n°{numero}</p>
+                        <p className={css.text}>{nome}</p>
+                        <p className={css.text}>Sala de aula n°{numero}</p>
                         <p className={css.text}>{descricao}</p>
                     </div>
                 </div>

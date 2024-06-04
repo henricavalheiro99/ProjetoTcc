@@ -11,8 +11,11 @@ function Cadastro() {
     const[email, setEmail] = useState('')
     const[senha, setSenha] = useState('')
     const[funcao, setFuncao] = useState('')
-
+    const[cpf, setCpf] = useState('')
+    const[imagem, setImagem] = useState('')
+    const [users,setUsers] = useState([])
     function reunirDados (){
+        const url = "http://127.0.0.1:5000/usuarios"
         if (nome === "" || email === "" || senha === "" || funcao === ""){
             alert("Preencha todos os campos")
             return;
@@ -22,11 +25,25 @@ function Cadastro() {
             nome,
             senha,
             funcao,
-            email
+            email,
+            cpf,
+            imagem
         }
 
-        alert(dados)
-        console.log(dados)
+        let config = {
+            method: 'POST',
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(dados)
+        }
+
+        fetch(url, config)
+            .then((dados)=>dados.json())
+            .then(function (data) {
+                setUsers(data.usuario)
+            })
+            .catch((erro) =>alert(erro))
     }
 
     return (
@@ -47,15 +64,13 @@ function Cadastro() {
                         <h2 className={css.title}>Crie sua conta</h2>
                     </div>
                     <div>
-                        <div>
+                        <div className={css.divinput}>
                             <InputCadastro tipo={"text"} name={"nome"} placeholder={"Insira o nome"} icone={"fa-user"}
                                            state={nome} set={setNome} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                              <InputCadastro tipo={"text"} name={"email"} placeholder={"Insira o email"}
                                            icone={"fa-envelope"} state={email} set={setEmail} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                             <InputCadastro tipo={"password"} name={"senha"} placeholder={"Insira a senha"}
                                            icone={"fa-key"} state={senha} set={setSenha} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
-                            <InputCadastro tipo={"text"} name={"funcao"} placeholder={"Insira a função"}
-                                           icone={"fa-key"} state={funcao} set={setFuncao} margemBottom={"30px"} altura={"45px"} fonte={'22px'}></InputCadastro>
                         </div>
                         <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                     </div>

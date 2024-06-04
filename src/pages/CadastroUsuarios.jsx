@@ -12,7 +12,8 @@ function CadastroUsuarios(){
     const[cpf, setCpf] = useState('')
     const[email, setEmail] = useState('')
     const[senha, setSenha] = useState('')
-
+    const [users,setUsers] = useState([])
+    const url = "http://127.0.0.1:5000/usuarios"
     function reunirDados (){
         if (nome === "" || email === "" || senha === ""  || funcao === "" || cpf === ""){
             alert("Preencha todos os campos")
@@ -26,6 +27,20 @@ function CadastroUsuarios(){
             email,
             senha
         }
+        let config = {
+            method: 'POST',
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(dados)
+        }
+
+        fetch(url, config)
+            .then((dados)=>dados.json())
+            .then(function (data) {
+                setUsers(data.usuario)
+            })
+            .catch((erro) =>alert(erro))
 
         alert(dados)
         console.log(dados)

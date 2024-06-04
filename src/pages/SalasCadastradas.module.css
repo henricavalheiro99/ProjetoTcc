@@ -26,6 +26,5 @@
 }
 
 .divCards{
-    height: 85vh;
     overflow-x: auto;
 }
