@@ -20,7 +20,7 @@ export default function Turmas(){
         fetch(url, config)
             .then((dados)=>dados.json())
             .then(function (data) {
-                setTurmas([...data.turmas])
+                setTurmas(data.turmas)
             })
             .catch((erro) =>alert(erro))
     }

@@ -1,6 +1,7 @@
 import css from "./InputSalas.module.css"
+import {type} from "@testing-library/user-event/dist/type";
 
-export default function InputCadastro({placeholder, icone, state, set}){
+export default function InputCadastro({placeholder, icone, state, set,tipo}){
     return(
         <div className={css.pegaTudo}>
             <div className={css.divInput}>
@@ -9,6 +10,7 @@ export default function InputCadastro({placeholder, icone, state, set}){
                 <i className={css.icone + " fa-solid " + icone}></i>
                 <input
                         value={state}
+                        type={tipo}
                         onChange={(e) =>  set(e.target.value)}
                         className={css.inputCadastro}
                         placeholder={placeholder}/>

@@ -3,10 +3,49 @@ import BarraLateral from "../components/BarraLateral";
 import SeletorDeDias from "../components/SeletorDeDias";
 import ComboBoxExample from "../components/ComboBox";
 import {useState} from "react";
-
+import InputSalas from "../components/InputSalas";
 
 export default function CadastrarTurmas() {
+    const [nomeDaTurma, setNomeDaTurma] = useState('');
+    const [inicioAulas, setInicioAulas] = useState('');
+    const [finalAulas, setFinalAulas] = useState('');
+    const [diasDaSemana, setDiasDaSemana] = useState('');
+    const [curso_id, setCurso_id] = useState('');
+    const [user_id, setUser_id] = useState('');
+    const [sala_id, setSala_id] = useState('');
     const [sala, setSala] = useState(null)
+    const [lista, setLista] = useState([]);
+    const [diasSelecionados, setDiasSelecionados] = useState([]);
+    const url = "http://127.0.0.1:5000/turmas"
+    function reunirDados() {
+
+        const dados = {
+            nomeDaTurma,
+            diasDaSemana:diasSelecionados,
+            inicioAulas,
+            finalAulas,
+            curso_id,
+            user_id,
+            sala_id
+        };
+
+        let config = {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(dados)
+        };
+
+        fetch(url, config)
+            .then(response => response.json())
+            .then(data => {
+                //setLista(data.turmas);
+                alert(data); // Mostrar resposta do servidor
+                console.log(data); // Mostrar resposta do servidor no console
+            })
+            .catch(error => alert(error)); // Mostrar erro, se houver
+    }
     return (
         <div className={css.main + ' container-fluid'}>
             <div className={css.tudo + " row"}>
@@ -24,68 +63,50 @@ export default function CadastrarTurmas() {
                         <div className={css.divtudo + ' row'}>
                             <div className={css.divcadastro + ' col-8'}>
                                 <div className={css.divinputs + ' row w-100 '}>
-                                    <input placeholder={'Nome Da turma'} className={css.inputs + ' col-12'} type="text"/>
-
                                     <div className={css.juncaoCB}>
-                                        <input placeholder={'Início'} className={css.inputs + ' col-4'} type="date"/>
-                                        <input placeholder={'Término'} className={css.inputs + ' col-4'} type="date"/>
-                                        <ComboBoxExample
-                                            label={" "}
-                                            titulo={'Salas'}
-                                            tamanho={'10vw'}
-                                            setValor={setSala}
-                                            itens={[
-                                                {
-                                                    nome: "Sala 22",
-                                                    valor: 1
-                                                },
-                                                {
-                                                    nome: "Sala 23",
-                                                    valor: 2
-                                                }
-                                            ]}
-                                        />
-                                    </div>
+                                        <InputSalas set={setNomeDaTurma} placeholder={'Nome da Turma'}   state={nomeDaTurma} texto={"Nome da Turma"}></InputSalas>
+                                        <InputSalas set={setInicioAulas} placeholder={'Início das aulas'} tipo={'date'}  state={inicioAulas} texto={"Início das aulas"}></InputSalas>
+                                        <InputSalas set={setFinalAulas} placeholder={'Fim das aulas'} tipo={'date'}   state={finalAulas} texto={"Fim das aulas"}></InputSalas>
+                                        <InputSalas set={setSala_id} placeholder={'Id da sala'}   state={sala_id} texto={"Id da sala"}></InputSalas>
 
-
+                                </div>
+                                </div>
+                                <p>Aulas Semanais:</p>
+                                <SeletorDeDias setDiasSelecionados={setDiasSelecionados} diasSelecionados={diasSelecionados} value={diasDaSemana}></SeletorDeDias>
+                                <div className={css.combos + ' d-flex gap-3'}>
                                     <ComboBoxExample
                                         label={" "}
                                         tamanho={'38vw'}
-                                        titulo={'Professores/Instrutores'}
-                                        setValor={setSala}
+                                        titulo={'Selecionar curso'}
+                                        setValor={setCurso_id}
                                         itens={[
                                             {
-                                                nome: "Igor",
+                                                nome: "TI",
                                                 valor: 1
                                             },
                                             {
-                                                nome: "Lais",
+                                                nome: "Eletromecânica",
                                                 valor: 2
                                             }
                                         ]}
                                     />
-
-
+                                    <ComboBoxExample
+                                        label={" "}
+                                        tamanho={'38vw'}
+                                        titulo={'Selecionar instrutor'}
+                                        setValor={setUser_id}
+                                        itens={[
+                                            {
+                                                nome: "Laís",
+                                                valor: 1
+                                            },
+                                            {
+                                                nome: "Igor",
+                                                valor: 2
+                                            }
+                                        ]}
+                                    />
                                 </div>
-                                <p>Aulas Semanais:</p>
-                                <SeletorDeDias></SeletorDeDias>
-
-                                <ComboBoxExample
-                                    label={" "}
-                                    tamanho={'38vw'}
-                                    titulo={'Selecionar curso'}
-                                    setValor={setSala}
-                                    itens={[
-                                        {
-                                            nome: "TI",
-                                            valor: 1
-                                        },
-                                        {
-                                            nome: "Eletromecânica",
-                                            valor: 2
-                                        }
-                                    ]}
-                                />
                             </div>
                             <div className={css.divalunos + ' col-4'}>
                                 <div className={css.alunos}>
@@ -124,7 +145,7 @@ export default function CadastrarTurmas() {
                                     </div>
                                 </div>
 
-                                <div className={css.botaoSDiv} style={{display:"flex", justifyContent:"center"}}><button className={css.botaoSalvar}>Salvar</button></div>
+                                <div className={css.botaoSDiv} style={{display:"flex", justifyContent:"center"}}><button className={css.botaoSalvar} onClick={reunirDados}>Salvar</button></div>
                             </div>
                         </div>
                     </div>

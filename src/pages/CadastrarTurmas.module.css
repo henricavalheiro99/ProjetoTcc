@@ -86,12 +86,8 @@
     height: fit-content;
 }
 .divinputs input{
-    border: 10px solid #ffffff;
     outline: none;
-    background-color: #E7E7E7;
     transition: 0.5s !important;
-    border-radius: 20px;
-    padding: 8px;
 }
 .checks{
     display: flex;

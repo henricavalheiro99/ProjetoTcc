@@ -3,8 +3,7 @@ import styles from './SeletorDeDias.module.css';
 
 const diasDaSemana = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 
-function SeletorDeDias() {
-    const [diasSelecionados, setDiasSelecionados] = useState([]);
+function SeletorDeDias({diasSelecionados, setDiasSelecionados}) {
 
     const toggleDia = (index) => {
         const novosDiasSelecionados = diasSelecionados.includes(index)
@@ -12,6 +11,7 @@ function SeletorDeDias() {
             : [...diasSelecionados, index];
 
         setDiasSelecionados(novosDiasSelecionados);
+
     };
 
     return (
