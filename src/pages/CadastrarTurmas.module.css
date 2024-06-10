@@ -78,7 +78,6 @@
     align-items: center;
     padding-right: 1px;
     border-radius: 10px;
-    box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.3);
 }
 .alunosLista div img{
     scale: 0.7;

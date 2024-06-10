@@ -3,7 +3,6 @@ import BarraLateral from "../components/BarraLateral";
 import BotaoCriar from "../components/BotaoCriar";
 import CardSalas from "../components/CardSalas";
 import {useEffect, useState} from "react";
-import CardTurmas from "../components/CardTurmas";
 
 export default function SalasCadastradas(){
     const [salas,setSalas] = useState([])

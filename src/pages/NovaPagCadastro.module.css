@@ -43,10 +43,12 @@
 }
 
 .divEsquerdaCima{
-    width: 60%;
+    width: 100%;
     margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
 .Cima{
     margin-top: 20px;
     display: flex;
@@ -110,4 +112,10 @@
 
 .inputCadastro::placeholder{
     color: #A8A8A8;
+}
+.divbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
