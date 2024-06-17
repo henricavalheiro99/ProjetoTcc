@@ -67,7 +67,7 @@ export default function CadastrarTurmas() {
                                         <InputSalas set={setNomeDaTurma} placeholder={'Nome da Turma'}   state={nomeDaTurma} texto={"Nome da Turma"}></InputSalas>
                                         <InputSalas set={setInicioAulas} placeholder={'Início das aulas'} tipo={'date'}  state={inicioAulas} texto={"Início das aulas"}></InputSalas>
                                         <InputSalas set={setFinalAulas} placeholder={'Fim das aulas'} tipo={'date'}   state={finalAulas} texto={"Fim das aulas"}></InputSalas>
-                                        <InputSalas set={setSala_id} placeholder={'Id da sala'}   state={sala_id} texto={"Id da sala"}></InputSalas>
+                                        <InputSalas set={setSala_id} placeholder={'Número da sala'}   state={sala_id} texto={"Id da sala"}></InputSalas>
 
                                 </div>
                                 </div>

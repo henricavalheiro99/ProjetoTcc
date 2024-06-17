@@ -7,7 +7,6 @@ import {useState} from "react";
 import BtnDireita from "../components/BtnDireita";
 export default function CadSalas(){
     const [tipo,setTipo] = useState([])
-    const [numeroDaSala,setNumero] = useState([])
     const [descricao,setDescricao] = useState([])
 
     const [sala,setSala] = useState([])
@@ -15,7 +14,6 @@ export default function CadSalas(){
         const url = "http://127.0.0.1:5000/salas"
         const dados = {
             tipo,
-            numeroDaSala,
             descricao
         }
 
@@ -48,7 +46,6 @@ export default function CadSalas(){
                                 <div className={css.campos}>
                                     <h2 className={css.title}>Nova sala:</h2>
                                     <InputSalas set={setTipo} placeholder={'Insira o tipo da sala'}   state={tipo} texto={"Tipo de sala"}></InputSalas>
-                                    <InputSalas set={setNumero} placeholder={'Insira o numero da sala'}  state={numeroDaSala} texto={"N°"}></InputSalas>
                                     <InputSalas set={setDescricao} placeholder={'Insira o descrição da sala'}   state={descricao} texto={"Descrição"}></InputSalas>
                                     <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                                 </div>
