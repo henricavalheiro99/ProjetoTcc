@@ -23,7 +23,7 @@ export default function CalendarioComponente() {
             fetch("http://127.0.0.1:5000/turmascalendario", config)
                 .then((dados)=> dados.json())
                 .then(function (data) {
-                    console.log(data.turmas)
+                    console.log('datas:',data.turmas)
                     setTurmas(data.turmas)
                 })
                 .catch((erro) =>alert(erro))
