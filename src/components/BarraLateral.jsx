@@ -2,7 +2,7 @@ import css from "./BarraLateral.module.css"
 import { useNavigate } from 'react-router-dom';
 export default function BarraLateral(){
     const navigate = useNavigate();
-
+    const usuario = JSON.parse(localStorage.getItem('usuario'))
     const irPara1 = () => {
         navigate("/salasCadastradas");
     };
@@ -26,6 +26,9 @@ export default function BarraLateral(){
     const irPara6 = () => {
         navigate("/edicao");
     };
+    const irPara7 = () => {
+        navigate("/login");
+    };
 
 
 
@@ -38,10 +41,10 @@ export default function BarraLateral(){
             </div>
             <div className={css.divuser}>
                 <div className={css.divPerfil}>
-                    <img className={css.foto} src="LESS.webp" alt=""/>
-                    <div className={css.infosPerfil}>
-                        <p className={' mb-0'}>Loud Less</p>
-                        <p className={css.cargo + ' mb-0'}>A máquina</p>
+                    <img className={css.foto} src={usuario.img} alt=""/>
+                    <div className={css.infosPerfil + ' d-flex'}>
+                        <p className={' mb-0'}>{usuario.nome}</p>
+                        <button className={css.btnSair} onClick={irPara7}>Sair</button>
                     </div>
                 </div>
             </div>

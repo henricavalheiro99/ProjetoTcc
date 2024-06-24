@@ -34,7 +34,7 @@ function Cadastrocursos(){
                 </div>
                 <div className={css.meio + ' col-9'}>
                     <div className={css.divTitle}>
-                        <BotaoCriar nome={"Cadastrar Turma:"}></BotaoCriar>
+                        <BotaoCriar redirect={"/cadCursos"} nome={"Cadastrar Turma:"}></BotaoCriar>
                     </div>
 
                     <div className={css.divSubtitle}>

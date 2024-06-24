@@ -7,6 +7,7 @@
 }
 
 .barra{
+    width: 25%;
     background-color: #800000;
     height: 100vh;
 }
@@ -47,6 +48,8 @@
 }
 .infosPerfil{
     margin-left: 10px !important;
+    justify-content: space-between;
+    width: 70%;
 }
 .divI img{
     scale:0.8;
@@ -88,4 +91,12 @@
 }
 .divI:hover{
     background-color: #620303;
+}
+.btnSair{
+    border: none;
+    background-color: #620303;
+    outline: none;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
 }

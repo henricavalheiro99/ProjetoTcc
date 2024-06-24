@@ -16,7 +16,7 @@ export default function CadastrarTurmas() {
     const [sala, setSala] = useState(null)
     const [lista, setLista] = useState([]);
     const [diasSelecionados, setDiasSelecionados] = useState([]);
-    const url = "http://127.0.0.1:5000/turmas"
+    const url = "http://127.0.0.1:5000/turmaspost"
     function reunirDados() {
 
         const dados = {
@@ -46,6 +46,8 @@ export default function CadastrarTurmas() {
             })
             .catch(error => alert(error)); // Mostrar erro, se houver
     }
+    const ano = 2024; // Ano desejado para consultar os feriados
+
     return (
         <div className={css.main + ' container-fluid'}>
             <div className={css.tudo + " row"}>

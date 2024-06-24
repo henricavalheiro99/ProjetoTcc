@@ -8,8 +8,6 @@ export default function CardCursos({title, subtitle, btn}){
           <p className={css.subtitle}>{subtitle}</p>
           <div className={css.divbaixo}>
               <div className={css.divIcones}>
-                  <i className={css.icone + " fa-regular fa-pen-to-square"}></i>
-                  <i className={css.icone + " fa-solid fa-trash-can"}></i>
               </div>
           </div>
       </div>
