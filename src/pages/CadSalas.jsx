@@ -8,7 +8,7 @@ import BtnDireita from "../components/BtnDireita";
 export default function CadSalas(){
     const [tipo,setTipo] = useState([''])
     const [descricao,setDescricao] = useState([''])
-    const [numero,setNumero] = useState([''])
+    const [numero,setNumero] = useState([])
 
     const [sala,setSala] = useState([])
     function reunirDados (){
@@ -49,7 +49,7 @@ export default function CadSalas(){
                                     <h2 className={css.title}>Nova sala:</h2>
                                     <InputSalas set={setTipo} placeholder={'Insira o tipo da sala'}   state={tipo} texto={"Tipo de sala"}></InputSalas>
                                     <InputSalas set={setDescricao} placeholder={'Insira o descrição da sala'}   state={descricao} texto={"Descrição"}></InputSalas>
-                                    <InputSalas set={setNumero} placeholder={'Insira o número'} tipo={'number'} state={numero} texto={"Número"}></InputSalas>
+                                    <InputSalas set={setNumero} placeholder={'Insira o número'} state={numero} texto={"Número"}></InputSalas>
                                     <BtnDireita title={"Cadastrar"} action={reunirDados}></BtnDireita>
                                 </div>
                             </div>
